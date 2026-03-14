@@ -34,7 +34,7 @@ Open http://localhost:5000
 
 ---
 
-## Deployed to Render.com and steps to deploy your own are:
+## Steps to deploy on Render.com:
 
 1. Push this folder to a GitHub repository
 2. Sign up at https://render.com
