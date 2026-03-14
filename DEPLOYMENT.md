@@ -343,6 +343,3 @@ Edit `server/routes.ts` - update seed data in `registerRoutes()` function
 - **Easiest**: Use Render.com or Railway.app (auto-deploy from GitHub)
 - **Self-hosted**: Follow VPS setup above with PM2 + Nginx
 
-**No Replit Trademark:** The app is completely independent and deployment-agnostic.
-
-Good luck with your portfolio! 🚀
