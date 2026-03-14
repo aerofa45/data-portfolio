@@ -183,14 +183,6 @@ Different cryptocurrencies were compared to determine which assets show higher r
 Area charts and line plots were used to visualize price fluctuations and volatility over time.
 The analysis highlights how statistical metrics can be used to quantify financial risk.
 
-Skills demonstrated:
-
-* Statistical analysis
-* Variance / standard deviation
-* Time-series processing
-* Financial risk analysis
-* Interactive visualization
-
 
 
 ## 4. Patient Recovery Rate Analysis (Healthcare)
@@ -200,14 +192,6 @@ The data was cleaned to remove missing values and grouped by treatment type and 
 Recovery rates were computed using aggregation functions and compared across categories.
 Bar charts were used to visualize differences in treatment effectiveness.
 The goal was to demonstrate how data analysis can be used to evaluate medical outcomes.
-
-Skills demonstrated:
-
-* Data cleaning
-* Grouping and aggregation
-* Healthcare analytics
-* Statistical comparison
-* Visualization
 
 
 
@@ -219,13 +203,6 @@ Different scenarios were simulated by changing parameters such as transmission r
 Line charts were used to visualize infection curves and compare different conditions.
 The project demonstrates how time-series data can be used to study epidemiological trends.
 
-Skills demonstrated:
-
-* Time-series modeling
-* Simulation
-* Growth analysis
-* Visualization
-* Mathematical interpretation
 
 
 ## 6. ECG Anomaly Detection (Biomedical Signal Processing)
