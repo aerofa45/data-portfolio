@@ -1,6 +1,6 @@
 # Data Science Portfolio
 
-A luxury-styled data science portfolio showcasing 10 analysis projects across Finance, Healthcare, ECG, and Audio domains. Inspired by the Audemars Piguet aesthetic — dark theme, gold accents, parallax scrolling, and magnetic button effects.
+A data science portfolio showcasing 10 analysis projects across Finance, Healthcare, ECG, and Audio domains. Inspired by the Audemars Piguet aesthetic — dark theme, gold accents, parallax scrolling, and magnetic button effects.
 
 ## Tech Stack
 
@@ -34,7 +34,7 @@ Open http://localhost:5000
 
 ---
 
-## Deploy to Render.com (Recommended)
+## Deployed to Render.com and steps to deploy your own are:
 
 1. Push this folder to a GitHub repository
 2. Sign up at https://render.com
@@ -49,9 +49,6 @@ Open http://localhost:5000
    - `NODE_ENV` — `production`
 7. Click **Create Web Service**
 
-Or use the included `render.yaml` for automatic configuration.
-
-For more hosting options, see [DEPLOYMENT.md](./DEPLOYMENT.md).
 
 ---
 
