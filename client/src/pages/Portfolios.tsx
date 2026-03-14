@@ -61,20 +61,29 @@ function PortfolioCard({ portfolio, index }: { portfolio: any, index: number }) 
       transition={{ duration: 0.8, delay: index * 0.1 }}
       className={cn(
         "group cursor-pointer",
-        !isEven && "md:mt-24" // Staggered grid effect
+        !isEven && "md:mt-24"
       )}
     >
       <Link href={`/portfolios/${portfolio.id}`}>
         <div className="relative overflow-hidden aspect-[4/3] mb-8 bg-secondary">
+
           <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay" />
-          <img 
-            src={portfolio.imageUrl} 
+
+          <img
+            src={portfolio.imageUrl || "/images/fallback.jpg"}
             alt={portfolio.title}
+            onError={(e) => {
+              const target = e.currentTarget;
+              target.onerror = null;
+              target.src = "/images/fallback.jpg";
+            }}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter saturate-0 group-hover:saturate-100"
           />
+
           <div className="absolute bottom-6 right-6 z-20 bg-white text-black p-3 rounded-full opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
             <ArrowUpRight className="w-6 h-6" />
           </div>
+
         </div>
         
         <div className="flex items-baseline justify-between mb-2">
@@ -89,9 +98,11 @@ function PortfolioCard({ portfolio, index }: { portfolio: any, index: number }) 
         <h2 className="font-display text-3xl text-white mb-3 group-hover:text-primary transition-colors duration-300">
           {portfolio.title}
         </h2>
+
         <p className="text-white/50 font-light line-clamp-2">
           {portfolio.description}
         </p>
+
       </Link>
     </motion.div>
   );
