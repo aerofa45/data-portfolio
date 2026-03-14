@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark Luxurious Theme Palette - Audemars Piguet inspired */
+  /* HSL Values */
+  
+  /* Deep, rich black/charcoal background */
+  --background: 240 10% 4%;
+  /* Off-white/platinum foreground */
+  --foreground: 40 10% 90%;
+
+  /* Gold/Bronze Accent */
+  --primary: 38 45% 55%;
+  --primary-foreground: 240 10% 4%;
+
+  /* Muted Slate/Silver */
+  --secondary: 240 5% 20%;
+  --secondary-foreground: 40 10% 90%;
+
+  /* Subdued text */
+  --muted: 240 5% 15%;
+  --muted-foreground: 240 5% 60%;
+
+  /* Distinctive accent for specific elements */
+  --accent: 38 45% 55%;
+  --accent-foreground: 240 10% 4%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 240 5% 20%;
+  --input: 240 5% 20%;
+  --ring: 38 45% 55%;
+
+  --radius: 0.25rem;
+
+  /* Font Variables */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-light tracking-wide;
+  }
+  
+  /* Custom scrollbar for Webkit */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Metallic Text Gradient */
+  .text-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-[#F5D0A9] via-[#D4AF37] to-[#AA8C2C];
+  }
+  
+  .border-gold {
+    @apply border border-[#D4AF37]/30;
+  }
+}
